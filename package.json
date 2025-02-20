@@ -1,0 +1,16 @@
+{
+  "name": "fly-pigeon-backend",
+  "version": "1.0.0",
+  "description": "API with services utilized for fly-pigeon application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Souza",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0",
+    "node": "^23.8.0"
+  }
+}
