@@ -1,5 +1,6 @@
 const express = require('express');
 const mysqlcommand = require('./connectmysql');
+const send = require('./nodemailer');
 
 const app = express();
 
@@ -11,6 +12,8 @@ app.get('/test', (req, res) => {
             return;
         }
         res.json(results);
+        res.end();
+        send();
     });
 });
 

@@ -1,0 +1,17 @@
+
+
+///////////////// insertion in multiple tables with relatioinasihp ////////////////////
+
+INSERT INTO contacts (`name`, `phone`) VALUES ('Alexandre','219866099260');
+SET @id_cont = LAST_INSERT_ID();
+INSERT INTO poll (`id_cont`, `namepoll`,`created_at`) VALUES (@id_cont, 'First poll', DATE_FORMAT(NOW(), '%H:%i:%s %d/%m/%Y'));
+
+
+
+HOW UPDATE OR SETUP PASSWORD ROOT IN MYSQL 
+------------------------------------------
+
+UPDATE mysql.user SET authentication_string=null WHERE User = 'root';
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'Alex@1797';
